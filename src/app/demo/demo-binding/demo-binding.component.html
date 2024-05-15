@@ -1,0 +1,22 @@
+<h2>Bindings</h2>
+<div class="chapter">
+    <h2>Property Binding</h2>
+    <h3>One way : </h3>
+    <p>Hello {{firstname}}!!!</p>
+    <h3>Two way</h3>
+    <label for="lastname">Lastname : </label>
+    <input type="text" id="lastname" [(ngModel)]="lastname">
+    <p>Lastname : {{lastname}}</p>
+    <button [disabled]="lastname === ''" (click)="reset()">Reset</button>
+</div>
+
+<div class="chapter">
+    <h2>Event binding</h2>
+    <button (click)="sayHello()">Click me</button>
+</div>
+
+<div class="chapter">
+    <h2>Attribute binding</h2>
+    <button (click)="toggleIsClickable()">Toggle</button>
+    <button [disabled]="!isClickable">Demo</button>
+</div>
