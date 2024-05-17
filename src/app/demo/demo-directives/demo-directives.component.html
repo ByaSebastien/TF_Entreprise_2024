@@ -1,0 +1,19 @@
+<h2>Demo directives</h2>
+<div class="chapter">
+    <h2>NgStyle</h2>
+    <p [ngStyle]="currentStyle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam hic illo consequatur modi eaque quasi
+        quaerat maxime dignissimos, reiciendis quibusdam culpa? Neque repellat velit atque aut sapiente sed amet.
+    </p>
+    <button (click)="toggleIsItalic()">Italic</button>
+    <button (click)="toggleIsBold()">Bold</button>
+    <button (click)="toggleIsBig()">Big</button>
+</div>
+<div class="chapter">
+    <h2>ngClass</h2>
+    <p [ngClass]="{red : isRed}">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A provident dolorum facilis minus explicabo cum, et
+        tempore illum ducimus? Soluta ullam saepe officia quod enim rerum, obcaecati deserunt at sit.
+    </p>
+    <button (click)="toggleIsRed()">Red</button>
+</div>

@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "email": "seb@test.be",
+      "password": "$2a$10$yATltCD3MhtK.xljG24eMeX1MmjW.lMuCs4qd9jSrTlfxwk4PBbx.",
+      "id": 1
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Ce que veulent les femmes",
+      "actor": "Mel Gibson"
+    },
+    {
+      "id": 2,
+      "title": "Inception",
+      "actor": "Leonardo DiCaprio"
+    },
+    {
+      "id": 3,
+      "title": "La La Land",
+      "actor": "Ryan Gosling"
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "actor": "Christian Bale"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "actor": "Tom Hanks"
+    },
+    {
+      "id": 6,
+      "title": "Les Évadés",
+      "actor": "Tim Robbins"
+    },
+    {
+      "id": 7,
+      "title": "Gladiator",
+      "actor": "Russell Crowe"
+    },
+    {
+      "id": 8,
+      "title": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "actor": "Elijah Wood"
+    },
+    {
+      "id": 9,
+      "title": "Titanic",
+      "actor": "Leonardo DiCaprio"
+    },
+    {
+      "id": 10,
+      "title": "Avatar",
+      "actor": "Sam Worthington"
+    },
+    {
+      "title": "seb",
+      "actor": "Test",
+      "id": 11
+    },
+    {
+      "title": "Pearl Harbor",
+      "actor": "Ben Aflec",
+      "id": 12
+    }
+  ]
+}

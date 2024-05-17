@@ -1,0 +1,43 @@
+<h2>Demo Structural dirrective</h2>
+<div class="chapter">
+    <h2>NgIf</h2>
+    <h3 *ngIf="isDayTime">🌞JOUR🌞</h3>
+    <h3 *ngIf="!isDayTime">🌚NUIT🌚</h3>
+    <!-- <h3 *ngIf="isDayTime; else notDayTime">🌞JOUR🌞</h3>
+    <ng-template #notDayTime>
+        <h3>🌚NUIT🌚</h3>
+    </ng-template> -->
+    <button (click)="toggleIsDayTime()">Toggle</button>
+</div>
+<div class="chapter">
+    <h2>NgFor</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books;index as i; trackBy : byISBN">
+                <td>{{i + 1}} : {{book.isbn}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="chapter">
+    <h2>NgSwitch</h2>
+    <div [ngSwitch]="day">
+        <h3 *ngSwitchCase="1">Lundi des patates.</h3>
+        <h3 *ngSwitchCase="2">Mardi des patates.</h3>
+        <h3 *ngSwitchCase="3">Mercredi des patates aussi.</h3>
+        <h3 *ngSwitchCase="4">Jeudi des patates.</h3>
+        <h3 *ngSwitchCase="5">Vendredi des patates.</h3>
+        <h3 *ngSwitchCase="6">Samedi des patates aussi.</h3>
+        <h3 *ngSwitchCase="7">Et le dimanche, jour du seigneur, a quel bonheur, des patates au beurre</h3>
+    </div>
+</div>

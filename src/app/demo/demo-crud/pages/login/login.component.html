@@ -1,0 +1,8 @@
+<div class="chapter">
+    <h2>Login</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <input type="text" [formControl]="form.controls.email" placeholder="email">
+        <input type="password" [formControl]="form.controls.password" placeholder="password">
+        <button type="submit">Login</button>
+    </form>
+</div>

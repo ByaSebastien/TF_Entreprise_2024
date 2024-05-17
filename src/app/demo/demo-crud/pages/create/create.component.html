@@ -1,0 +1,18 @@
+<div class="chapter">
+    <h2>Create movie</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+            <input type="text" formControlName="title" placeholder="Titre">
+            <p style="color: red;" *ngIf="form.get('title')?.hasError && form.get('title')?.touched">
+                Ce champ est requis
+            </p>
+        </div>
+
+        <div>
+            <input type="text" formControlName="actor" placeholder="Acteur">
+        </div>
+
+        <button type="submit">Create</button>
+    </form>
+    <a routerLink="/demo/movies">Retour à la liste</a>
+</div>

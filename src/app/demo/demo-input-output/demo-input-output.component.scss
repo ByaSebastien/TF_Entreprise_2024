@@ -1,0 +1,18 @@
+.chapter {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .parent {
+        width: 100%;
+    }
+
+    .enfant {
+        margin: 10px 0px;
+        padding: 10px;
+        border: 1px solid black;
+        width: 80%;
+    }
+}

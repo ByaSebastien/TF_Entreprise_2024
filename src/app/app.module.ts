@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
+import { TokenInterceptor } from './demo/demo-crud/interceptors/token.interceptor';
 
 const test: string = 'test'
 
@@ -23,8 +25,15 @@ const test: string = 'test'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

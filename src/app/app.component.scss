@@ -16,17 +16,16 @@
     .content {
         display: flex;
         justify-content: space-between;
-        height: 87vh;
+        flex: 1;
 
         nav {
-            height: 100%;
             width: 30%;
             background-color: gainsboro;
             padding: 10px;
+            flex: 1;
         }
 
         main {
-            height: 100%;
             padding: 10px;
             width: 70%;
         }

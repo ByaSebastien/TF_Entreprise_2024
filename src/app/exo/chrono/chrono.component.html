@@ -1,1 +1,9 @@
-<p>chrono works!</p>
+<div class="chapter">
+    <h2>Exo Chrono</h2>
+    <h3>{{seconds | convertTime}}</h3>
+    <div class="buttons">
+        <button (click)="start()" [disabled]="timer">Start</button>
+        <button (click)="stop()" [disabled]="!timer">Stop</button>
+        <button (click)="reset()" [disabled]="seconds == 0 || timer">Reset</button>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div>
+    <a routerLink="/demo/movies/login">Login</a>
+</div>
+<div>
+    <a routerLink="/demo/movies/create">Creer un film</a>
+</div>
+<div class="chapter">
+    <h2>Movies</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td>{{movie.id}}</td>
+                <td>{{movie.title}}</td>
+                <td>{{movie.actor}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

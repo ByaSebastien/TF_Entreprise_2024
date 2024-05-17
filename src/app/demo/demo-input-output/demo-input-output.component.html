@@ -1,0 +1,13 @@
+<div class="chapter">
+    <h2>Demo input / output</h2>
+    <div class="parent">
+        <h3>Parent : </h3>
+        <input type="text" [(ngModel)]="name" placeholder="name">
+    </div>
+    <div class="enfant">
+        <h3>Enfant : </h3>
+        <app-enfant [parentName]="name" (myEvent)="reactToChild($event)">
+            <p>Hello world!</p>
+        </app-enfant>
+    </div>
+</div>
